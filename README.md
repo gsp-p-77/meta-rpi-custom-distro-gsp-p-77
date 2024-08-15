@@ -33,4 +33,9 @@ Run 'bitbake-layers add-layer meta-rpi3-docker-engine'
 II. Misc
 ========
 
-bitbake rpi3-doe-image 
+Bitbake the image acc to your required and supported rootfs size:
+
+- bitbake rpi3-doe-minimal-image 
+- bitbake rpi3-doe-4GB-image 
+- bitbake rpi3-doe-64GB-image 
+
