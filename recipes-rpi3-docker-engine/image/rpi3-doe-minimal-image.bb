@@ -51,6 +51,9 @@ IMAGE_INSTALL_append = " systemd-analyze"
 # Install docker to image
 IMAGE_INSTALL_append = " docker-ce"
 
+# Add installation of git
+IMAGE_INSTALL_append = " git"
+
 ENABLE_UART = "1" 
 ENABLE_BINARY_LOCALE_GENERATION = "1"
 

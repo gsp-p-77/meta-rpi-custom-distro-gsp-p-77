@@ -53,5 +53,8 @@ ENABLE_BINARY_LOCALE_GENERATION = "1"
 # Install docker to image
 IMAGE_INSTALL_append = " docker-ce"
 
+# Add installation of git
+IMAGE_INSTALL_append = " git"
+
 # Add 64GB extra space to rootfs in image
 IMAGE_ROOTFS_EXTRA_SPACE = "65536"
