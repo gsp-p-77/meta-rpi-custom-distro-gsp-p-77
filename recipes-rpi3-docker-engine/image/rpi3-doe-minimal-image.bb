@@ -27,8 +27,8 @@ IMAGE_INSTALL += "linux-firmware-bcm43430"
 #IMAGE_INSTALL += "nfs-utils"
 
 # Add Network Manager
-#IMAGE_INSTALL += "networkmanager networkmanager-bash-completion networkmanager-nmtui"
-#IMAGE_INSTALL_append = " pulseaudio pulseaudio-server pulseaudio-misc pulseaudio-module-dbus-protocol alsa-utils i2c-tools"
+IMAGE_INSTALL += "networkmanager networkmanager-bash-completion networkmanager-nmtui"
+IMAGE_INSTALL_append = " pulseaudio pulseaudio-server pulseaudio-misc pulseaudio-module-dbus-protocol alsa-utils i2c-tools"
 # Only produce the "rpi-sdimg" image format
 IMAGE_FSTYPES = "rpi-sdimg"
 # Remove old builds
@@ -47,6 +47,11 @@ IMAGE_INSTALL_append = " systemd-analyze"
 #libswscale \
 #libswresample \
 #"
+
+# Install docker to image
+IMAGE_INSTALL_append = " docker-ce"
+
 ENABLE_UART = "1" 
 ENABLE_BINARY_LOCALE_GENERATION = "1"
+
 
