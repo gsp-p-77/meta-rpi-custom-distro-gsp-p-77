@@ -4,6 +4,10 @@ This README file contains information on the contents of the meta-rpi3-docker-en
 
 Please see the corresponding sections below for details.
 
+## Goal
+
+This meta layer can be used, to create an image for the RPI3, to use it as a docker engine (ref. to https://www.docker.com/ how to use docker).
+
 ## Dependencies
 
 Refer to https://github.com/gsp-p-77/meta-rpi3-docker-engine/blob/main/clone_layers.sh
