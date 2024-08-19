@@ -47,6 +47,7 @@ IMAGE_INSTALL_append = " systemd-analyze"
 #libswscale \
 #libswresample \
 #"
+
 ENABLE_UART = "1" 
 ENABLE_BINARY_LOCALE_GENERATION = "1"
 
@@ -56,5 +57,8 @@ IMAGE_INSTALL_append = " docker-ce"
 # Add installation of git
 IMAGE_INSTALL_append = " git"
 
-# Add 64GB extra space to rootfs in image
-IMAGE_ROOTFS_EXTRA_SPACE = "65536"
+# Add service to connect to WLAN 0 via nmcli"
+IMAGE_INSTALL_append = " nmcli-wifi-connect"
+
+# Add 4GB extra space to rootfs in image
+IMAGE_ROOTFS_EXTRA_SPACE = "4194304"
