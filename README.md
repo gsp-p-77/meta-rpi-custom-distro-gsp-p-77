@@ -36,7 +36,8 @@ I. Adding the meta-rpi3-docker-engine layer to your build
   - source source oe-init-build-env
 - Copy meta-rpi3-docker-engine/local_conf to build/conf
 - Adapt build/conf/local_conf to your needs (especially the root pw!)
-
+- Adapt /recipes-support/nmcli-wifi-connect/files/nmcli-wifi-connect.service (SSID and PSK)
+  
 II. Misc
 ========
 
