@@ -4,10 +4,13 @@ This README file contains information on the contents of the meta-rpi3-docker-en
 
 Please see the corresponding sections below for details.
 
+## Goal
+
+This meta layer can be used, to create an image for the RPI3, to use it as a docker engine (ref. to https://www.docker.com/ how to use docker).
+
 ## Dependencies
 
-  URI: git://git.yoctoproject.org/meta-raspberrypi
-  branch: dunfell
+Refer to https://github.com/gsp-p-77/meta-rpi3-docker-engine/blob/main/clone_layers.sh
 
 ### Build and test environment
 
@@ -28,7 +31,11 @@ not applicable
 I. Adding the meta-rpi3-docker-engine layer to your build
 =================================================
 
-Run 'bitbake-layers add-layer meta-rpi3-docker-engine'
+- initialize poky:
+  - cd poky
+  - source source oe-init-build-env
+- Copy meta-rpi3-docker-engine/local_conf to build/conf
+- Adapt build/conf/local_conf to your needs (especially the root pw!)
 
 II. Misc
 ========

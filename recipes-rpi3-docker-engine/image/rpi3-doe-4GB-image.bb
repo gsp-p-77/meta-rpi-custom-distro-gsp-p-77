@@ -62,3 +62,4 @@ IMAGE_INSTALL_append = " nmcli-wifi-connect"
 
 # Add 4GB extra space to rootfs in image
 IMAGE_ROOTFS_EXTRA_SPACE = "4194304"
+
