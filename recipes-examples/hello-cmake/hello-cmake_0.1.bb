@@ -10,4 +10,7 @@ S = "${WORKDIR}"
 
 inherit cmake
 
+# Optional: Install to /bin instead of /usr/bin
+# EXTRA_OECMAKE = "-DCMAKE_INSTALL_PREFIX:PATH=/"
+
 
