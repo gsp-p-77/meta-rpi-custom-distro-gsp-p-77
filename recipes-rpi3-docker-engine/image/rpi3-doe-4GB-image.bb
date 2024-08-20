@@ -28,7 +28,7 @@ IMAGE_INSTALL += "linux-firmware-bcm43430"
 
 # Add Network Manager
 IMAGE_INSTALL += "networkmanager networkmanager-bash-completion networkmanager-nmtui"
-IMAGE_INSTALL_append = " pulseaudio pulseaudio-server pulseaudio-misc pulseaudio-module-dbus-protocol alsa-utils i2c-tools"
+IMAGE_INSTALL_append = " pulseaudio pulseaudio-server pulseaudio-misc pulseaudio-module-dbus-protocol alsa-utils i2c-tools dbus"
 # Only produce the "rpi-sdimg" image format
 IMAGE_FSTYPES = "rpi-sdimg"
 # Remove old builds
@@ -59,6 +59,9 @@ IMAGE_INSTALL_append = " git"
 
 # Add service to connect to WLAN 0 via nmcli"
 IMAGE_INSTALL_append = " nmcli-wifi-connect"
+
+# Add hello-cmake
+IMAGE_INSTALL_append = " hello-cmake"
 
 # Add 4GB extra space to rootfs in image
 IMAGE_ROOTFS_EXTRA_SPACE = "4194304"
