@@ -19,5 +19,7 @@ do_install() {
 # Enable the service automatically
 SYSTEMD_AUTO_ENABLE = "enable"
 
+FILES_${PN} += "${systemd_system_unitdir}/nmcli-wifi-connect.service"
+
 SYSTEMD_SERVICE_${PN} = "nmcli-wifi-connect.service"
 
