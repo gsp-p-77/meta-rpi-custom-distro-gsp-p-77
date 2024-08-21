@@ -54,6 +54,12 @@ ENABLE_BINARY_LOCALE_GENERATION = "1"
 # Install docker to image
 IMAGE_INSTALL:append = " docker-ce"
 
+# Install docker compose to image
+# IMAGE_INSTALL:append = " python3-docker-compose"
+
+# Install service to provision with portainer
+IMAGE_INSTALL:append = " portainer-install-service"
+
 # Add installation of git
 IMAGE_INSTALL:append = " git"
 

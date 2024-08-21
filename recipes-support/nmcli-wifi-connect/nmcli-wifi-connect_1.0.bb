@@ -9,7 +9,7 @@ S = "${WORKDIR}"
 inherit allarch systemd
 
 # Specify the files and directories to be included in the package
-FILES_${PN} += "${systemd_system_unitdir}"
+FILES:${PN} += "${systemd_system_unitdir}"
 
 do_install() {
     install -d ${D}${systemd_unitdir}/system
@@ -19,7 +19,5 @@ do_install() {
 # Enable the service automatically
 SYSTEMD_AUTO_ENABLE = "enable"
 
-FILES_${PN} += "${systemd_system_unitdir}/nmcli-wifi-connect.service"
-
-SYSTEMD_SERVICE_${PN} = "nmcli-wifi-connect.service"
+SYSTEMD_SERVICE:${PN} = "nmcli-wifi-connect.service"
 
