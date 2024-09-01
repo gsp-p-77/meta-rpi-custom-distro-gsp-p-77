@@ -1,6 +1,6 @@
 # meta-rpi-custom-distro-gsp-p-77
 
-This repository provides a custom Yocto distro for my private Raspberry PI use cases such as bitbaking images,:
+This repository provides a custom Yocto distro for my private Raspberry PI use cases such as bitbaking images:
 - to realize docker engines (status: Finished)
 - to realize Kodi instances (status: Planned next)
 - ...
