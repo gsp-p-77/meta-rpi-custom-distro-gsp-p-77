@@ -6,7 +6,7 @@ Please see the corresponding sections below for details.
 
 ## Goal
 
-This meta layer can be used, to create an image for the RPI3, to use it as a docker engine (ref. to https://www.docker.com/ how to use docker).
+Create a meta layer for a distro, that bitbakes images to provide a docker engine on RPI3 (ref. to https://www.docker.com/ how to use docker).
 
 ## Dependencies
 
