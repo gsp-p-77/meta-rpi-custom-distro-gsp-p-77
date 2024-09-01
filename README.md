@@ -5,14 +5,22 @@ This repository provides a custom Yocto distro for my private Raspberry PI use c
 - to realize Kodi instances (status: Planned next)
 - ...
 
+## Supported Yocto releases
+This repository supports currently following Yocto releases:
+- Kirkstone
+- Dunfell
+
+The main branch is intended for documentation only. 
+
+Please checkout one branch for one of the Yocto releases (more details about Yocto releases: ref. to https://docs.yoctoproject.org/migration-guides/index.html)
+
 ## Dependencies
 
-Refer to https://github.com/gsp-p-77/meta-rpi-custom-distro-gsp-p-77/blob/main/clone_layers.sh
+Refer to /meta-rpi-custom-distro-gsp-p-77/clone_layers.sh
 
 ### Build and test environment
 
-URI: https://github.com/gsp-p-77/my-IaC/tree/main/servers/03-yocto-build-env/dunfell/vagrant
-
+URI: https://github.com/gsp-p-77/my-IaC/tree/main/servers/04-yocto-wsl
 
 ## Patches
 
