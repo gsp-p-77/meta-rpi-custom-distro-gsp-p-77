@@ -1,16 +1,13 @@
-# meta-rpi3-docker-engine
+# meta-rpi-custom-distro-gsp-p-77
 
-This README file contains information on the contents of the meta-rpi3-docker-engine layer.
-
-Please see the corresponding sections below for details.
-
-## Goal
-
-Create a meta layer for a distro, that bitbakes images to provide a docker engine on RPI3 (ref. to https://www.docker.com/ how to use docker).
+This repository provides a custom Yocto distro for my private Raspberry PI use cases such as bitbaking images,:
+- to realize docker engines (status: Finished)
+- to realize Kodi instances (status: Planned next)
+- ...
 
 ## Dependencies
 
-Refer to https://github.com/gsp-p-77/meta-rpi3-docker-engine/blob/main/clone_layers.sh
+Refer to https://github.com/gsp-p-77/meta-rpi-custom-distro-gsp-p-77/blob/main/clone_layers.sh
 
 ### Build and test environment
 
